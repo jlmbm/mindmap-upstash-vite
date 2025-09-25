@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const api = axios.create({ baseURL: '/api' })
+const api = axios.create({ baseURL: 'http://192.168.1.4:3000' }) // 指向后端API
 
 export const signup = (email, password) => api.post('/signup', { email, password })
 export const login = (email, password) => api.post('/login', { email, password })
